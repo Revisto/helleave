@@ -1,7 +1,7 @@
 
 FROM python:3.8
 
-COPY revspotify /app
+COPY . /app
 WORKDIR /app
 
 RUN pip3 install -U setuptools
