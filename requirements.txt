@@ -2,3 +2,4 @@ selenium
 python-telegram-bot
 python-dotenv
 validator_collection
+fake_useragent
