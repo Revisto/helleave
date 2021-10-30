@@ -2,10 +2,15 @@ from selenium import webdriver
 from validator_collection import is_not_empty
 from fake_useragent import UserAgent
 from time import sleep
+from selenium.webdriver.chrome.options import Options
+
 
 class PardisSelenium:
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        options = Options()
+        options.add_argument('--headless')
+        options.add_argument('--disable-gpu')
+        self.driver = webdriver.Chrome(chrome_options=options)
         self.domain = "https://www.helli4.ir/"
         self.login_url = self.domain + "portal/user/"
         self.classes_url = self.domain + "pds/vclasses.php"
