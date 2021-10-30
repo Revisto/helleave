@@ -1,4 +1,3 @@
-import re
 from views.messages import View
 from telegram.ext import ConversationHandler
 from controllers.pardis_controller import PardisSelenium
