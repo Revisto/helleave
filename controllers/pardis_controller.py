@@ -10,6 +10,7 @@ class PardisSelenium:
         options = Options()
         options.add_argument('--headless')
         options.add_argument('--disable-gpu')
+        options.add_argument("window-size=1920,1080")
         self.driver = webdriver.Chrome(chrome_options=options)
         self.domain = "https://www.helli4.ir/"
         self.login_url = self.domain + "portal/user/"
